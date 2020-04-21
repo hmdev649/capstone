@@ -1,0 +1,1 @@
+This folder contains function definitions for data manipulation and processing.
