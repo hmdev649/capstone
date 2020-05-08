@@ -31,7 +31,7 @@ The article recommendation is primarily based on the cosine similarity score bet
 
 ## Evaluation
 A match is graded on the following scale, manually:
-	1. Perfect
-	2. Thematically Relevant
-	3. Related But Different
-	4. Irrelevant
+1. Perfect
+2. Thematically Relevant
+3. Related But Different
+4. Irrelevant
