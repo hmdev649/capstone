@@ -5,12 +5,12 @@ As new readers come to the site, or casual readers return, often the comments wi
 
 This project builds a recommendation system that answers these questions in the comments by referring readers to Hodinkee articles that answer their questions with a high degree of confidence. The general principle should be easily carried over to other, similar online communities with highly engaged audiences.
 
-Data Understanding
+## Data Understanding
 The Hodinkee site publishes more than 15 articles a week, and its complete corpus is currently approaching 7,000 articles. These include everything from short posts describing a new product launch to 10,000 word essays diving deep into horological arcana. The comments on each article can vary in number from under ten to hundreds over time. 
 
 In just the three years that the site has had its own implementation of a commenting system there have been nearly 150,000 comments posted on articles published since that time (older articles have a Disqus comments system implementation). Please see the Hodinkee Online Community presentation in the reports folder for a more detailed high-level overview.
 
-Data Preparation
+## Data Preparation
 The data for this project is not included in the public facing repo, and neither is the code for scraping it, primarily because the data is proprietary (the total dataset was also almost 2 GB in size). Please contact me if you'd like to discuss these steps in more detail. The project notebooks presume the data is available in csv files in the ~/src/data folder:
 
 comments	articles	tags
@@ -41,10 +41,10 @@ parent_id	word_count	tag6
 
 Question-comments are heuristically filtered from the full list of comments, with the heuristics described in the FSM notebooks.
 
-Modeling
+## Modeling
 The article recommendation is primarily based on the cosine similarity score between the comment text and the article title. A TF-IDF vectorizer is fit on the comments text and used to transform the comments text as well as the article titles. Matrix scores above a very high threshold are returned (along with the comment/title associated metadata) for evaluation.
 
-Evaluation
+## Evaluation
 A match is graded on the following scale, manually:
 	1. Perfect
 	2. Thematically Relevant
