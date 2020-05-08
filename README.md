@@ -21,24 +21,8 @@ The data for this project is not included in the public facing repo, and neither
 | comment_published	| article_author	| tag2 |
 | comment_text	| article_published	| tag3 |
 | comment_likes	| article_modified	| tag4 |
-| comment_flag	| comm_count	| tag5 |
-| parent_id	| word_count	| tag6 |
-		| tag7 |
-		| tag8 |
-		| tag9 |
-		| tag10 |
-		| tag11 |
-		| tag12 |
-		| tag13 |
-		| tag14 |
-		| tag15 |
-		| tag16 |
-		| tag17 |
-		| tag18 |
-		| tag19 |
-		| tag20 |
-		| tag21 |
-		| tag22 |
+| comment_flag	| comm_count	| ... |
+| parent_id	| word_count	| tag22 |
 
 Question-comments are heuristically filtered from the full list of comments, with the heuristics described in the FSM notebooks.
 
