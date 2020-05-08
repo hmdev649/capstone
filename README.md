@@ -13,31 +13,32 @@ In just the three years that the site has had its own implementation of a commen
 ## Data Preparation
 The data for this project is not included in the public facing repo, and neither is the code for scraping it, primarily because the data is proprietary (the total dataset was also almost 2 GB in size). Please contact me if you'd like to discuss these steps in more detail. The project notebooks presume the data is available in csv files in the ~/src/data folder:
 
-comments	articles	tags
-article_num	article_id	tag_id
-comment_id	article_cat	tag0
-commenter_name	article_title	tag1
-comment_published	article_author	tag2
-comment_text	article_published	tag3
-comment_likes	article_modified	tag4
-comment_flag	comm_count	tag5
-parent_id	word_count	tag6
-		tag7
-		tag8
-		tag9
-		tag10
-		tag11
-		tag12
-		tag13
-		tag14
-		tag15
-		tag16
-		tag17
-		tag18
-		tag19
-		tag20
-		tag21
-		tag22
+| comments	| articles	| tags |
+| --- | --- | --- |
+| article_num	| article_id	| tag_id |
+| comment_id	| article_cat	| tag0 |
+| commenter_name	| article_title	| tag1 |
+| comment_published	| article_author	| tag2 |
+| comment_text	| article_published	| tag3 |
+| comment_likes	| article_modified	| tag4 |
+| comment_flag	| comm_count	| tag5 |
+| parent_id	| word_count	| tag6 |
+		| tag7 |
+		| tag8 |
+		| tag9 |
+		| tag10 |
+		| tag11 |
+		| tag12 |
+		| tag13 |
+		| tag14 |
+		| tag15 |
+		| tag16 |
+		| tag17 |
+		| tag18 |
+		| tag19 |
+		| tag20 |
+		| tag21 |
+		| tag22 |
 
 Question-comments are heuristically filtered from the full list of comments, with the heuristics described in the FSM notebooks.
 
